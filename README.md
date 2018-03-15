@@ -70,7 +70,7 @@ public class JWTUtility {
 
     private final byte[] signatureKeyBytes;
 
-    public JWTUtility(String signatureKey) {
+    public JWTUtility(String signatureKey) { // Pass your signature key to make an instance. Use a random secret string
         this.signatureKeyBytes = signatureKey.getBytes();
     }
 
